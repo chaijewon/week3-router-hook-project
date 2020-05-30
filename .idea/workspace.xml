@@ -4,7 +4,9 @@
     <list default="true" id="6ad6fc8b-6951-4054-bd9b-cd1b8a08a936" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Recipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecipeDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeDetail.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -75,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590798152232</updated>
-      <workItem from="1590798153921" duration="10853000" />
+      <workItem from="1590798153921" duration="15572000" />
     </task>
     <task id="LOCAL-00001" summary="hooks">
       <created>1590805533065</created>
@@ -91,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590807354843</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hooks3">
+      <created>1590809498118</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590809498118</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,13 +110,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hooks" />
     <MESSAGE value="hooks2" />
-    <option name="LAST_COMMIT_MESSAGE" value="hooks2" />
+    <MESSAGE value="hooks3" />
+    <option name="LAST_COMMIT_MESSAGE" value="hooks3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="240" y="0" key="CommitChangelistDialog2" timestamp="1590807354127">
+    <state x="240" y="0" key="CommitChangelistDialog2" timestamp="1590809497370">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="240" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1590807354127" />
+    <state x="240" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1590809497370" />
     <state x="473" y="275" key="Github.ShareDialog" timestamp="1590805511296">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -127,9 +138,13 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1259" height="189" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1590799595813" />
-    <state x="232" y="115" key="Vcs.Push.Dialog.v2" timestamp="1590807357627">
+    <state x="143" y="24" key="SettingsEditor" timestamp="1590814967726">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="232" y="115" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1590807357627" />
+    <state x="143" y="24" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1590814967726" />
+    <state x="232" y="115" key="Vcs.Push.Dialog.v2" timestamp="1590809499950">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="232" y="115" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1590809499950" />
   </component>
 </project>

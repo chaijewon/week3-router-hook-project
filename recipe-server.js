@@ -75,6 +75,30 @@ app.get('/recipe_total',(request,response)=>{
         })
     })
 })
+/*
+       http://localhost:3355  /recipe_detail ? no=1&page=1
+       =====================  ==============   ==== request에 담겨서
+         서버 주소               URI
+         request.query.no;
+         request.query.page
+ */
+app.get('/recipe_detail',(request,response)=>{
+    // 요청 => 처리 => 결과값 전송
+    var no=request.query.no;
+    // 몽고디비에 연결
+    var url="mongodb://211.238.142.181:27017";
+    Client.connect(url,(err,client)=>{
+        var db=client.db('mydb');
+        // WHERE no=2
+        db.collection('recipe_detail').find({no:parseInt(no)})
+            .toArray((err,docs)=>{
+                // 전송
+                response.json(docs[0]);
+                client.close();
+            })
+    })
+
+})
 
 
 
