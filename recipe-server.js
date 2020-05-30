@@ -100,6 +100,77 @@ app.get('/recipe_detail',(request,response)=>{
 
 })
 
+app.get('/chef',(request,response)=>{
+    // request=사용자가 보내준 요청 정보 : page,id,pwd
+    // 요청을 처리
+    // 결과를 전송 ==> ,response
+    var page=request.query.page;//request.getParameter("page")
+    var rowSize=50;
+    var skip=(page*rowSize)-rowSize;
+    /*
+       1page => skip=0
+       2page => 12(버림) ==> 13
+     */
+    var url="mongodb://211.238.142.181:27017";//몽고디비 주소
+    Client.connect(url,(err,client)=>{
+        var db=client.db('mydb');
+        // SELECT * FROM recipe  => find({})
+        // SELECT * FROM recipe WHERE no=1 => find({no:1})
+        // SELECT * FROM recipe WHERE title LIKE '%값%'
+        // find({"title":{"$regex":".*"+값}}
+        /*
+             [{}
+             {}
+             {}
+             {}]
+             ...
+         */
+        db.collection('chef').find({}).skip(skip).limit(rowSize)
+            .toArray((err,docs)=>{
+                // 요청한 사용자 => 데이터 전송
+                response.json(docs);
+                console.log(docs)
+                client.close();
+            })
+    })
+})
+// SELECT CEIL(COUNT(*)/12.0) FROM recipe
+app.get('/chef_total',(request,response)=>{
+    var url="mongodb://211.238.142.181:27017"
+    Client.connect(url,(err,client)=>{
+        var db=client.db('mydb');
+        // count() ==> return
+        db.collection('chef').find({}).count((err,count)=>{
+            response.json({total:Math.ceil(count/50.0)})
+            client.close();
+            return count;
+        })
+    })
+})
+/*
+  @RequestMapping("/recipe_news")
+  public String recipe_news(request,response)
+  {
+  }
+ */
+const xml2js=require("xml2js")
+// XML => JSON
+const request=require("request")
+// 외부 서버에서 데이터를 읽어 올때
+app.get('/recipe_news',(req,res)=>{
+    var query=encodeURIComponent("야구");
+    var url="http://newssearch.naver.com/search.naver?where=rss&query="+query
+    // xml을 JSON으러 변경하는 파서기
+    var parser=new xml2js.Parser({
+        explicitArray:false
+    })
+    request({url:url},(err,request,xml)=>{
+        parser.parseString(xml,function(err,pJson){
+            console.log(pJson.rss.channel.item)
+        })
+    })
+})
+
 
 
 

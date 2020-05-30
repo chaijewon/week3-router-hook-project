@@ -19,8 +19,11 @@ export default function RecipeDetail(props) {
         })
     },[])
     const food=String(detail.foodmake)
+    // 문자열 변환
     const ff=food.split('\^');
-
+    // split => 구분 문자별로 => 배열
+    // split => 정규식  ^(시작문자) , $(끝나는 문자)
+    // 정규식에 사용하는 문자를 사용할때 \^ \$
     const data=ff.map((m)=>
         <li>{m}</li>
     )
@@ -58,6 +61,22 @@ export default function RecipeDetail(props) {
                         <ul>
                             {data}
                         </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colSpan={"3"}>
+                      <table className={"table"}>
+                          <tr>
+                              <td rowSpan={"2"} width={"30%"}>
+                                  <img src={detail.chef_poster}
+                                       className={"img-circle"} width={"50"} height={"50"}/>
+                              </td>
+                              <td>{detail.chef}</td>
+                          </tr>
+                          <tr>
+                              <td>{detail.chef_profile}</td>
+                          </tr>
+                      </table>
                     </td>
                 </tr>
             </table>

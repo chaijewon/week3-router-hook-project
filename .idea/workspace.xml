@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ad6fc8b-6951-4054-bd9b-cd1b8a08a936" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/inwon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/time.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/who.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chef.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chef.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RecipeDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecipeDetail.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590798152232</updated>
       <workItem from="1590798153921" duration="15572000" />
-      <workItem from="1590818699978" duration="3215000" />
+      <workItem from="1590818699978" duration="6655000" />
     </task>
     <task id="LOCAL-00001" summary="hooks">
       <created>1590805533065</created>
@@ -119,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590818869258</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hooks5">
+      <created>1590822108312</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590822108312</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,13 +132,14 @@
     <MESSAGE value="hooks2" />
     <MESSAGE value="hooks3" />
     <MESSAGE value="hooks4" />
-    <option name="LAST_COMMIT_MESSAGE" value="hooks4" />
+    <MESSAGE value="hooks5" />
+    <option name="LAST_COMMIT_MESSAGE" value="hooks5" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="240" y="0" key="CommitChangelistDialog2" timestamp="1590818868121">
+    <state x="240" y="0" key="CommitChangelistDialog2" timestamp="1590822107591">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="240" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1590818868121" />
+    <state x="240" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1590822107591" />
     <state x="473" y="275" key="Github.ShareDialog" timestamp="1590805511296">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -161,9 +164,13 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="143" y="24" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1590814967726" />
-    <state x="232" y="115" key="Vcs.Push.Dialog.v2" timestamp="1590818870980">
+    <state x="232" y="115" key="Vcs.Push.Dialog.v2" timestamp="1590822110244">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="232" y="115" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1590818870980" />
+    <state x="232" y="115" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1590822110244" />
+    <state x="303" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1590824368009">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="303" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1590824368009" />
   </component>
 </project>
