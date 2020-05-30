@@ -13,10 +13,11 @@ import axios from 'axios'
 export default function Recipe() {
   const [recipe,setRecipe]=useState([]);
   const [page,setPage]=useState(1);
+  const [total,setTotal]=useState(0)
   // http://localhost:3355/recipe?page=1
-  useEffect(()=>{
+  useEffect(async ()=>{
     // 서버를 연결해서 데이터를 읽어온 후 => setRecipe에 저장
-    axios.get('http://localhost:3355/recipe',{
+    await axios.get('http://localhost:3355/recipe',{
        params:{
          page:page
        }
@@ -25,7 +26,33 @@ export default function Recipe() {
     })
   },[])
 
+    useEffect(async ()=>{
+        await axios.get('http://localhost:3355/recipe_total').then((result)=>{
+            setTotal(result.data.total)
+        })
+    },[])
   // 출력할 데이터를 모아서 => return에 전송
+    const onPrev=()=>{
+        setPage(page>1?page-1:page)
+        axios.get('http://localhost:3355/recipe',{
+            params:{
+                page:page
+            }
+        }).then((result)=>{
+            setRecipe(result.data);
+        })
+    }
+    const onNext=()=>{
+      setPage(page<total?page+1:page)
+        axios.get('http://localhost:3355/recipe',{
+            params:{
+                page:page
+            }
+        }).then((result)=>{
+            setRecipe(result.data);
+        })
+    }
+    // render()
   const html=recipe.map((m)=>
       <div className="col-md-4">
           <div className="thumbnail">
@@ -40,8 +67,15 @@ export default function Recipe() {
       </div>
   )
   return (
-      <div className={"row"}>
-          {html}
-      </div>
+      <React.Fragment>
+          <div className={"row"}>
+              {html}
+          </div>
+          <div className={"row"}>
+              <button className={"btn btn-lg btn-primary"} onClick={onPrev}>이전</button>
+              {page} page / {total} pages
+              <button className={"btn btn-lg btn-danger"} onClick={onNext}>다음</button>
+          </div>
+      </React.Fragment>
   )
 }
