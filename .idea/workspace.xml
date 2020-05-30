@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ad6fc8b-6951-4054-bd9b-cd1b8a08a936" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recipe-server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Chef.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ChefDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Recipe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RecipeDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RecipeFind.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RecipeNews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Recipe.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,14 +74,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590798152232</updated>
-      <workItem from="1590798153921" duration="6713000" />
+      <workItem from="1590798153921" duration="8709000" />
     </task>
+    <task id="LOCAL-00001" summary="hooks">
+      <created>1590805533065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590805533065</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hooks" />
+    <option name="LAST_COMMIT_MESSAGE" value="hooks" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="240" y="0" key="CommitChangelistDialog2" timestamp="1590805531653">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="240" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1590805531653" />
     <state x="473" y="275" key="Github.ShareDialog" timestamp="1590805511296">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -115,5 +118,9 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1259" height="189" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1590799595813" />
+    <state x="232" y="115" key="Vcs.Push.Dialog.v2" timestamp="1590805535070">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="232" y="115" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1590805535070" />
   </component>
 </project>
