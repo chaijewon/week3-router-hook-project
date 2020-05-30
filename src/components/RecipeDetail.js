@@ -18,6 +18,12 @@ export default function RecipeDetail(props) {
             setDetail(result.data)
         })
     },[])
+    const food=String(detail.foodmake)
+    const ff=food.split('\^');
+
+    const data=ff.map((m)=>
+        <li>{m}</li>
+    )
     return (
         <div className={"row"} style={{"margin":"0px auto","width":"900px"}}>
             <table className={"table"}>
@@ -34,6 +40,24 @@ export default function RecipeDetail(props) {
                 <tr>
                     <td colSpan={"3"}>
                         {detail.content}
+                    </td>
+                </tr>
+                <tr>
+                    <td className={"text-center"}><img src={"/inwon.png"}/></td>
+                    <td className={"text-center"}><img src={"/time.png"}/></td>
+                    <td className={"text-center"}><img src={"/who.png"}/></td>
+                </tr>
+                <tr>
+                    <td className={"text-center"}>{detail.info1}</td>
+                    <td className={"text-center"}>{detail.info2}</td>
+                    <td className={"text-center"}>{detail.info3}</td>
+                </tr>
+                <tr>
+                    <td colSpan={"3"}>
+                        <h3>요리방법</h3>
+                        <ul>
+                            {data}
+                        </ul>
                     </td>
                 </tr>
             </table>
